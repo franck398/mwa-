@@ -1,0 +1,129 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.mt:maven-web-application:war:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: javax.servlet:javax.servlet-api:jar -> duplicate declaration of version 3.1.0 @ line 87, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The artifact org.codehaus.mojo:sonar-maven-plugin:jar:4.0.0.4121 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:jar:4.0.0.4121: SonarQube plugin was moved to SonarSource organisation
+[INFO] 
+[INFO] --------------------< com.mt:maven-web-application >--------------------
+[INFO] Building maven-web-application 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- sonar:4.0.0.4121:sonar (default-cli) @ maven-web-application ---
+[WARNING] 11:11:50.715 Using an unspecified version instead of an explicit plugin version may introduce breaking analysis changes at an unwanted time. It is highly recommended to use an explicit version, e.g. 'org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121'.
+[INFO] 11:11:50.728 Java 21.0.8 Red Hat, Inc. (64-bit)
+[INFO] 11:11:50.728 Linux 6.12.0-55.18.1.el10_0.x86_64 (amd64)
+[INFO] 11:11:50.987 User cache: /home/ec2-user/.sonar/cache
+[INFO] 11:11:51.089 Communicating with SonarQube Server 8.9.10
+[INFO] 11:11:51.113 Default locale: "en", source code encoding: "UTF-8"
+[INFO] 11:11:51.597 Load global settings
+[INFO] 11:11:51.807 Load global settings (done) | time=213ms
+[INFO] 11:11:51.809 Server id: BF41A1F2-AZi9rqfrsh1Mx4TiOXIG
+[INFO] 11:11:51.813 User cache: /home/ec2-user/.sonar/cache
+[INFO] 11:11:51.818 Load/download plugins
+[INFO] 11:11:51.818 Load plugins index
+[INFO] 11:11:51.998 Load plugins index (done) | time=180ms
+[INFO] 11:11:52.075 Load/download plugins (done) | time=257ms
+[INFO] 11:11:52.535 Process project properties
+[INFO] 11:11:52.541 Process project properties (done) | time=6ms
+[INFO] 11:11:52.543 Execute project builders
+[INFO] 11:11:52.544 Execute project builders (done) | time=2ms
+[INFO] 11:11:52.546 Project key: com.mt:maven-web-application
+[INFO] 11:11:52.546 Base dir: /home/ec2-user/JP/mwa
+[INFO] 11:11:52.546 Working dir: /home/ec2-user/JP/mwa/target/sonar
+[INFO] 11:11:52.655 Load project settings for component key: 'com.mt:maven-web-application'
+[INFO] 11:11:52.796 Load project settings for component key: 'com.mt:maven-web-application' (done) | time=141ms
+[INFO] 11:11:52.833 Load quality profiles
+[INFO] 11:11:52.997 Load quality profiles (done) | time=164ms
+[INFO] 11:11:53.009 Load active rules
+[INFO] 11:11:56.419 Load active rules (done) | time=3410ms
+[INFO] 11:11:56.491 Indexing files...
+[INFO] 11:11:56.492 Project configuration:
+[INFO] 11:11:56.601 14 files indexed
+[INFO] 11:11:56.601 0 files ignored because of scm ignore settings
+[INFO] 11:11:56.602 Quality profile for java: HGZCQ
+[INFO] 11:11:56.602 Quality profile for jsp: Sonar way
+[INFO] 11:11:56.602 Quality profile for xml: Sonar way
+[INFO] 11:11:56.602 ------------- Run sensors on module maven-web-application
+[INFO] 11:11:56.677 Load metrics repository
+[INFO] 11:11:56.829 Load metrics repository (done) | time=153ms
+[INFO] 11:11:57.791 Sensor JavaSquidSensor [java]
+[INFO] 11:11:58.201 Configured Java source version (sonar.java.source): 8
+[INFO] 11:11:58.214 JavaClasspath initialization
+[INFO] 11:11:58.233 JavaClasspath initialization (done) | time=19ms
+[INFO] 11:11:58.233 JavaTestClasspath initialization
+[INFO] 11:11:58.234 JavaTestClasspath initialization (done) | time=1ms
+[INFO] 11:11:58.249 Java Main Files AST scan
+[INFO] 11:11:58.255 1 source file to be analyzed
+[INFO] 11:11:58.266 Load project repositories
+[INFO] 11:11:58.410 Load project repositories (done) | time=144ms
+[INFO] 11:11:59.679 1/1 source file has been analyzed
+[INFO] 11:11:59.681 Java Main Files AST scan (done) | time=1432ms
+[INFO] 11:11:59.682 Java Test Files AST scan
+[INFO] 11:11:59.684 0 source files to be analyzed
+[INFO] 11:11:59.684 0/0 source files have been analyzed
+[INFO] 11:11:59.684 Java Test Files AST scan (done) | time=2ms
+[INFO] 11:11:59.685 Java Generated Files AST scan
+[INFO] 11:11:59.686 0 source files to be analyzed
+[INFO] 11:11:59.686 0/0 source files have been analyzed
+[INFO] 11:11:59.686 Java Generated Files AST scan (done) | time=1ms
+[INFO] 11:11:59.686 Sensor JavaSquidSensor [java] (done) | time=1895ms
+[INFO] 11:11:59.686 Sensor CSS Rules [cssfamily]
+[INFO] 11:11:59.687 No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+[INFO] 11:11:59.687 Sensor CSS Rules [cssfamily] (done) | time=1ms
+[INFO] 11:11:59.687 Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] 11:11:59.690 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+[INFO] 11:11:59.691 No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+[INFO] 11:11:59.691 Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+[INFO] 11:11:59.691 Sensor C# Project Type Information [csharp]
+[INFO] 11:11:59.692 Sensor C# Project Type Information [csharp] (done) | time=1ms
+[INFO] 11:11:59.692 Sensor C# Properties [csharp]
+[INFO] 11:11:59.693 Sensor C# Properties [csharp] (done) | time=1ms
+[INFO] 11:11:59.693 Sensor SurefireSensor [java]
+[INFO] 11:11:59.695 parsing [/home/ec2-user/JP/mwa/target/surefire-reports]
+[INFO] 11:11:59.696 Sensor SurefireSensor [java] (done) | time=3ms
+[INFO] 11:11:59.696 Sensor JavaXmlSensor [java]
+[INFO] 11:11:59.699 3 source files to be analyzed
+[INFO] 11:12:00.041 3/3 source files have been analyzed
+[INFO] 11:12:00.043 Sensor JavaXmlSensor [java] (done) | time=347ms
+[INFO] 11:12:00.043 Sensor HTML [web]
+[INFO] 11:12:00.155 Sensor HTML [web] (done) | time=112ms
+[INFO] 11:12:00.155 Sensor XML Sensor [xml]
+[INFO] 11:12:00.160 3 source files to be analyzed
+[INFO] 11:12:00.349 3/3 source files have been analyzed
+[INFO] 11:12:00.349 Sensor XML Sensor [xml] (done) | time=194ms
+[INFO] 11:12:00.349 Sensor VB.NET Project Type Information [vbnet]
+[INFO] 11:12:00.351 Sensor VB.NET Project Type Information [vbnet] (done) | time=2ms
+[INFO] 11:12:00.351 Sensor VB.NET Properties [vbnet]
+[INFO] 11:12:00.352 Sensor VB.NET Properties [vbnet] (done) | time=1ms
+[INFO] 11:12:00.356 ------------- Run sensors on project
+[INFO] 11:12:00.379 Sensor Zero Coverage Sensor
+[INFO] 11:12:00.388 Sensor Zero Coverage Sensor (done) | time=9ms
+[INFO] 11:12:00.388 Sensor Java CPD Block Indexer
+[INFO] 11:12:00.398 Sensor Java CPD Block Indexer (done) | time=10ms
+[INFO] 11:12:00.410 SCM Publisher SCM provider for this project is: git
+[INFO] 11:12:00.411 SCM Publisher 1 source file to be analyzed
+[INFO] 11:12:00.499 SCM Publisher 0/1 source files have been analyzed (done) | time=87ms
+[WARNING] 11:12:00.499 Missing blame information for the following files:
+[WARNING] 11:12:00.499   * pom.xml
+[WARNING] 11:12:00.499 This may lead to missing/broken features in SonarQube
+[INFO] 11:12:00.504 CPD Executor Calculating CPD for 2 files
+[INFO] 11:12:00.510 CPD Executor CPD calculation finished (done) | time=6ms
+[INFO] 11:12:00.581 Analysis report generated in 69ms, dir size=115 KB
+[INFO] 11:12:00.606 Analysis report compressed in 25ms, zip size=23 KB
+[INFO] 11:12:00.749 Analysis report uploaded in 143ms
+[INFO] 11:12:00.751 ANALYSIS SUCCESSFUL, you can browse http://51.20.115.34:9000/dashboard?id=com.mt%3Amaven-web-application
+[INFO] 11:12:00.751 Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] 11:12:00.751 More about the report processing at http://51.20.115.34:9000/api/ce/task?id=AZjHLb7osh1Mx4TiOcOw
+[INFO] 11:12:00.756 Analysis total time: 8.598 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.187 s
+[INFO] Finished at: 2025-08-20T11:12:00Z
+[INFO] ------------------------------------------------------------------------
